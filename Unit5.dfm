@@ -1,0 +1,140 @@
+object Form5: TForm5
+  Left = 265
+  Top = 129
+  Width = 543
+  Height = 354
+  Caption = #1054#1087#1094#1080#1080
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object GroupBox1: TGroupBox
+    Left = 8
+    Top = 8
+    Width = 233
+    Height = 113
+    Caption = #1059#1087#1088#1072#1074#1083#1077#1085#1080#1077' '#1089#1083#1086#1103#1084#1080
+    TabOrder = 0
+    object CheckBox1: TCheckBox
+      Left = 8
+      Top = 16
+      Width = 177
+      Height = 17
+      Caption = #1054#1090#1088#1080#1089#1086#1074#1099#1074#1072#1090#1100' '#1079#1072#1076#1085#1102#1102' '#1095#1072#1089#1090#1100
+      Checked = True
+      State = cbChecked
+      TabOrder = 0
+    end
+    object CheckBox2: TCheckBox
+      Left = 8
+      Top = 40
+      Width = 177
+      Height = 17
+      Caption = #1054#1090#1088#1080#1089#1086#1074#1099#1074#1072#1090#1100' '#1086#1089#1085#1086#1074#1085#1091#1102' '#1095#1072#1089#1090#1100
+      Checked = True
+      State = cbChecked
+      TabOrder = 1
+    end
+    object CheckBox3: TCheckBox
+      Left = 8
+      Top = 64
+      Width = 185
+      Height = 17
+      Caption = #1054#1090#1088#1080#1089#1086#1074#1099#1074#1072#1090#1100' '#1087#1077#1088#1077#1076#1085#1102#1102' '#1095#1072#1089#1090#1100
+      Checked = True
+      State = cbChecked
+      TabOrder = 2
+    end
+    object CheckBox4: TCheckBox
+      Left = 8
+      Top = 88
+      Width = 185
+      Height = 17
+      Caption = #1057#1077#1090#1082#1072
+      Checked = True
+      State = cbChecked
+      TabOrder = 3
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 8
+    Top = 128
+    Width = 233
+    Height = 65
+    Caption = #1063#1072#1089#1090#1086#1090#1072' '#1086#1073#1085#1086#1074#1083#1077#1085#1080#1103' (ms)'
+    TabOrder = 1
+    object Edit1: TEdit
+      Left = 8
+      Top = 24
+      Width = 177
+      Height = 21
+      ReadOnly = True
+      TabOrder = 0
+      Text = '1'
+    end
+    object UpDown1: TUpDown
+      Left = 185
+      Top = 24
+      Width = 16
+      Height = 21
+      HelpContext = 1
+      Associate = Edit1
+      Min = 1
+      Position = 1
+      TabOrder = 1
+      OnClick = UpDown1Click
+    end
+  end
+  object GroupBox3: TGroupBox
+    Left = 256
+    Top = 8
+    Width = 265
+    Height = 185
+    Caption = 'Graf paks'
+    TabOrder = 2
+    object Image1: TImage
+      Left = 264
+      Top = 200
+      Width = 33
+      Height = 33
+    end
+    object ListBox1: TListBox
+      Left = 8
+      Top = 16
+      Width = 249
+      Height = 129
+      ItemHeight = 13
+      TabOrder = 0
+      OnClick = ListBox1Click
+    end
+    object Button1: TButton
+      Left = 16
+      Top = 152
+      Width = 75
+      Height = 25
+      Caption = #1059#1089#1090#1072#1085#1086#1074#1080#1090#1100
+      TabOrder = 1
+      OnClick = Button1Click
+    end
+    object Edit2: TEdit
+      Left = 112
+      Top = 152
+      Width = 121
+      Height = 21
+      TabOrder = 2
+    end
+  end
+  object Memo1: TMemo
+    Left = 72
+    Top = 208
+    Width = 377
+    Height = 89
+    TabOrder = 3
+  end
+end

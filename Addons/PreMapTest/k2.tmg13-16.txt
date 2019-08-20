@@ -1,0 +1,18 @@
+li/1end.png;
+di100,150;
+sr0,0,190;
+fr0,0,250,40;
+st180,0,0;
+dtжми кнопку,50,0;
+kw;
+dtScript compliet!,30,0;
+sw50;
+er;
+et;
+ei;
+rt;
+sw100;
+nn;
+mp1,1,-1,124;
+sw100;
+#######end script#######

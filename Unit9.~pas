@@ -1,0 +1,57 @@
+unit Unit9;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls;
+
+type
+  TForm9 = class(TForm)
+    Label1: TLabel;
+    Edit1: TEdit;
+    Label2: TLabel;
+    Edit2: TEdit;
+    Button1: TButton;
+    procedure Button1Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form9: TForm9;
+
+implementation
+
+uses Unit1, Unit3;
+
+{$R *.dfm}
+
+procedure TForm9.Button1Click(Sender: TObject);
+begin
+ mapHsize:=strtoint(edit1.Text);   
+ mapWsize:=strtoint(edit2.Text); 
+Form1.Enabled:=true;
+ form9.Close;
+end;
+
+procedure TForm9.FormCreate(Sender: TObject);
+var
+x,y:real;
+begin
+x:=(Screen.Width/2)-(Form9.Width/2);
+y:=(Screen.Height/2)-(Form9.Height/2);
+Form9.left:=trunc(x);
+Form9.top:=trunc(y);
+end;
+
+procedure TForm9.FormShow(Sender: TObject);
+begin
+Form1.Enabled:=false;
+end;
+
+end.
